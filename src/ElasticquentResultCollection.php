@@ -117,6 +117,19 @@ class ElasticquentResultCollection extends \Illuminate\Database\Eloquent\Collect
     }
 
     /**
+     * Get Items
+     *
+     * Get the raw items array from
+     * Elasticsearch results.
+     *
+     * @return array
+     */
+    public function getItems()
+    {
+        return $this->items;
+    }
+
+    /**
      * Get aggregations
      *
      * Get the raw hits array from
