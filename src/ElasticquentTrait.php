@@ -236,7 +236,7 @@ trait ElasticquentTrait
      *
      * @return ElasticquentResultCollection
      */
-    public static function searchByQuery($query = null, $aggregations = null, $sourceFields = null, $limit = null, $offset = null, $sort = null)
+    public static function searchByQuery($query = null, $limit = null, $offset = null, $sort = null, $aggregations = null, $sourceFields = null)
     {
         $instance = new static;
 
